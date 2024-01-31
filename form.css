@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition:0.8s all ease;
+}
+
+:root {
+    --theme:white;
+    --text: black;
+    
+}
+#switch{
+    position:absolute;
+    bottom:50px;
+    left: 100px;
+    padding: 5px 30px;
+    background: rgb(179, 27, 27);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    outline: none;
+    transition: 1s all ease;
+}
+#switch:hover{
+    transform: translateY(-10px);
+}
+#form {
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 110;
+    transition: 0.3s all ease;
+}
+
+#errBox{
+    background: var(--theme);
+    padding: 50px 100px;
+    box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.25);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form1 {
+    width: 800px;
+    display: flex;
+    background: var(--theme);
+    box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.25);
+    height: 500px;
+    position: relative;
+}
+
+#desc {
+    color: var(--text);
+    position: relative;
+    transition: 0.5s all ease;
+    z-index: 2;
+    width: 40%;
+    background: linear-gradient(to top, rgb(255, 8, 0), rgb(241, 104, 99));
+}
+
+.bt,
+.button {
+    /* margin-top: 60px; */
+    transition: 0.5s all ease;
+    padding: 5px 25px;
+    color: var(--text);
+    border: 1px solid rgb(255, 255, 255);
+    background: none;
+}
+
+.button:hover {
+    background: rgba(0, 0, 0, 0.432);
+    border-color: white;
+}
+
+label {
+    width: 20px;
+    color: var(--text);
+    font-size: 20px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid rgb(211, 211, 211);
+    width: 300px;
+    color: var(--text);
+    caret-color: rgb(255, 0, 0);
+    padding-left: 5px;
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+.line-frm {
+    display: inline-block;
+    width: 70px;
+    height: 5px;
+    border-radius: 8px;
+    margin: 10px 0px;
+    background-color: red;
+}
+
+.bt:hover {
+    background: linear-gradient(to right, rgb(114, 0, 167), rgb(77, 0, 150));
+
+}
+
+.inp-hvr{
+    width: 325px;
+    height: 3px;
+    border-radius: 25%;
+    background: red;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all ease;
+    transform: scale(0);
+    transform-origin:center ;
+}
+input:focus ~ .inp-hvr{
+    transform: scale(1);
+}
+
+.form-style {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+#reg-form{
+    display: none;
+}
