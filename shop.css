@@ -23,7 +23,8 @@ h1{
 .nav{
     display: flex;
     justify-content: space-between;
-    padding-left: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -40,7 +41,6 @@ h1{
     border-radius: 20px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     position: relative;
 }
 .line-hvr{
@@ -70,6 +70,7 @@ h1{
 }
 .nav-btn:hover{
     background: red;
+    border-color: white;
     color: white;
 }
 .nav-btn .btn-hover{
