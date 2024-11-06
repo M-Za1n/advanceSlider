@@ -67,7 +67,7 @@ body{
     width: 155px;
 }
 
-.det {
+#det {
     height: 100vh;
     position: absolute;
     z-index: 100;
